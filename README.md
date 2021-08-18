@@ -1,4 +1,4 @@
-#Тестовое для Printdirect
+# Тестовое для Printdirect
 
 * `npm install` - установить зависимости
 * `npm run dev` - dev-server с горячей перезагрузкой
