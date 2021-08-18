@@ -1,0 +1,24 @@
+/* open-sans-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v23-latin_cyrillic-ext_cyrillic-regular.woff');
+  src: url('../fonts/open-sans-v23-latin_cyrillic-ext_cyrillic-regular.woff2');
+}
+/* open-sans-600 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v23-latin_cyrillic-ext_cyrillic-600.woff');
+  src: url('../fonts/open-sans-v23-latin_cyrillic-ext_cyrillic-600.woff2') format('woff2');
+}
+/* open-sans-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v23-latin_cyrillic-ext_cyrillic-700.woff');
+  src: url('../fonts/open-sans-v23-latin_cyrillic-ext_cyrillic-700.woff2') format('woff2');
+}

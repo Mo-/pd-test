@@ -1,0 +1,41 @@
+.spinner {
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: flex-start;
+
+  &__btn {
+    width: 34px;
+    height: 33px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: center;
+    background: #F7F7F7;
+    border: none;
+  }
+
+  &__dec {
+    border-right: 1px solid #D1D1D1;
+  }
+
+  &__inc {
+    border-left: 1px solid #D1D1D1;
+  }
+
+  &__input {
+    height: 33px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}

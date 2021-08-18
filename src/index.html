@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style/app.scss">
+</head>
+<body>
+<div class="app">
+    <div class="app__header"></div>
+    <!-- /.app__header -->
+
+    <div class="app__content">
+        <div class="ctr">
+            <div class="basket">
+                <div class="basket__header">
+                    <h1 class="basket__title">Корзина</h1>
+                    <div class="basket__id">ID корзины: 357253</div>
+                </div>
+                <!-- /.basket__header -->
+
+                <div class="basket__list">
+                    <include src="partials/basket-item.html"></include>
+                    <include src="partials/basket-item.html"></include>
+                    <include src="partials/basket-item.html"></include>
+                    <include src="partials/basket-item.html"></include>
+                    <include src="partials/basket-item.html"></include>
+                </div>
+                <!-- /.basket__list -->
+
+                <div class="basket__aside">
+                    <include src="partials/basket-shop.html"></include>
+                </div>
+                <!-- /.basket__aside -->
+            </div>
+            <!-- /.basket -->
+
+            <div class="related">
+                <h2 class="related__title">Вам также может пригодиться</h2>
+                <div class="related-list">
+                    <div class="related-list__plate">
+                        <include src="partials/related-item.html"></include>
+                        <include src="partials/related-item.html"></include>
+                        <include src="partials/related-item.html"></include>
+                        <include src="partials/related-item.html"></include>
+                    </div>
+                    <!-- /.related-list__plate -->
+                </div>
+                <!-- /.related__list -->
+            </div>
+            <!-- /.related -->
+        </div>
+        <!-- /.ctr -->
+    </div>
+    <!-- /.app__content -->
+
+    <div class="app__footer"></div>
+    <!-- /.app__footer -->
+</div>
+<!-- /.app -->
+</body>
+<script>
+    (function () {
+        document.addEventListener('click', function (event) {
+            const classes = event.target.classList;
+            //
+            // обработка кнопок спиннера
+            if (classes.contains('spinner__btn')) {
+                const input = event.target.parentNode.querySelector('.spinner__input')
+                if (classes.contains('spinner__inc')) {
+                    input.stepUp();
+                } else {
+                    input.stepDown();
+                }
+            }
+            //
+            // обработка кнопок избранного
+            else if (classes.contains('fav-btn')) {
+                event.target.setAttribute(
+                    'aria-pressed',
+                    event.target.getAttribute('aria-pressed') === "false"
+                );
+            }
+        });
+    })();
+</script>
+</html>

@@ -1,0 +1,22 @@
+.btn {
+  width: 100%;
+  background: #0096EA;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  color: #FBFBFC;
+  border: none;
+  cursor: pointer;
+
+  &_md {
+    padding: 10px 5px;
+    line-height: 170%;
+
+  }
+
+  &_lg {
+    padding: 12px 5px;
+    line-height: 174%;
+  }
+}

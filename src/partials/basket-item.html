@@ -1,0 +1,42 @@
+<div href="/" class="basket-item">
+    <a href="/" class="basket-item__img">
+        <img src="/assets/img/prod_01.jpg" srcset="/assets/img/prod_01@2x.jpg 2x" alt="">
+    </a>
+    <a href="/" class="basket-item__title">Футболка Теория относительности и коты, серая</a>
+    <div class="basket-item__data">
+        <div class="basket-item__size">
+            <div class="basket-item__label">Размер</div>
+            <include src="partials/select.html"></include>
+        </div>
+        <!-- /.basket-item__size -->
+
+        <div class="basket-item__qty hidden-mobile">
+            <div class="basket-item__label">Количество</div>
+            <include src="partials/spinner.html"></include>
+            <div class="basket-item__qty-info">1675₽/шт.</div>
+        </div>
+        <!-- /.basket-item__qty -->
+
+        <span class="basket-item__fav">
+            <button class="fav-btn" type="button" aria-pressed="false" aria-label="Избранное">
+                <span>В избранное</span>
+                <span>В избранном</span>
+            </button>
+        </span>
+        <!-- /.basket-item__fav -->
+
+        <div class="basket-item__total">
+            <div class="basket-item__total-amount"><span class="basket-item__sum">10 350</span> ₽</div>
+            <div class="basket-item__total-discount">
+                <del>7 777 ₽</del> <span>-20%</span>
+            </div>
+        </div>
+        <!-- /.basket-item__total -->
+
+        <span class="basket-item__remove">
+            <button class="remove-btn" type="button" aria-label="Удалить"><span>Удалить</span></button>
+        </span>
+        <!-- /.basket-item__remove -->
+    </div>
+    <!-- /.basket-item__data -->
+</div>

@@ -1,0 +1,38 @@
+.select {
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  height: 35px;
+  font-size: 15px;
+  display: inline-block;
+  background: #ffffff;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 42px;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #D1D1D1;
+    background: #F7F7F7 center 54% no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.76268 0.241667C9.6072 0.0856977 9.40153 0 9.18315 0C9.18172 0 9.18021 0 9.17878 0C8.96129 0.00112403 8.75771 0.0873643 8.60516 0.242829L5.08444 3.77465C5.03792 3.82132 4.96219 3.8214 4.91559 3.77465L1.39374 0.241705C1.07487 -0.0780621 0.556151 -0.078062 0.2348 0.244302C-0.0792492 0.566047 -0.0781287 1.08523 0.23735 1.40171L4.41925 5.59675C4.57191 5.75314 4.77611 5.83989 4.9943 5.84105C4.99576 5.84105 4.99719 5.84105 4.99866 5.84105C5.21704 5.84105 5.42271 5.75531 5.57819 5.59938L9.76523 1.39907C10.0792 1.07733 10.0781 0.558101 9.76268 0.241667Z' fill='%23202527'/%3E%3C/svg%3E%0A");
+    pointer-events: none;
+  }
+
+  select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 60px 0 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    height: 100%;
+    line-height: inherit;
+    outline: none;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,75 @@
+@import "normalize";
+@import "fonts";
+@import "select";
+@import "spinner";
+@import "btn";
+@import "basket";
+@import "related";
+
+* {
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: inherit;
+  }
+}
+
+html, body {
+  height: -webkit-fill-available;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F7F7F9;
+}
+
+.ctr {
+  max-width: calc(1284px + 32px);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+@media (max-width: 1339px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app__header {
+  height: 128px;
+  background: #fff;
+  border-bottom: 1px solid #E9EAEC;
+}
+
+.app__content {
+  flex: 1 1 auto;
+
+  background: #FBFBFC;
+
+  @media (max-width: 1339px) {
+    padding-top: 20px;
+    padding-bottom: 64px;
+  }
+  @media (min-width: 1340px) {
+    padding-top: 35px;
+    padding-bottom: 84px;
+  }
+}
+
+.app__footer {
+  height: 517px;
+  background: #F7F7F7;
+  border-top: 1px solid #E9EAEC;
+}
